@@ -1,0 +1,76 @@
+@media only screen and (min-width: 768px) {
+    .portfolio__item:hover {
+        @include bgi('temp/temp-img-2.jpg');
+
+        &.portfolio__item {
+            &_form {
+                @include bgi('temp/form-css.jpg');
+            }
+
+            &_email {
+                @include bgi('temp/email-html.png');
+            }
+
+            &_projex {
+                @include bgi('temp/projex-css.png');
+            }
+
+            &_notify {
+                @include bgi('temp/notify-css.png');
+            }
+
+            &_waxom {
+                @include bgi('temp/waxom-sass.png');
+            }
+
+            &_mike {
+                @include bgi('temp/mikeregina-bootstrap3.png');
+            }
+
+        }
+
+        &:before {
+            opacity: .7;
+        }
+
+        .portfolio__icon {
+            opacity: .6;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .right-block__skills-text:hover+.right-block__skills-indicator:before {
+        width: 1%;
+    }
+
+    .left-block__contact-link:hover .left-block__contact-icon,
+    .left-block__icon:hover .right-block__icon-inner,
+    .right-block__icon:hover .right-block__icon-inner {
+        -webkit-animation: rotate-vert-center 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        animation: rotate-vert-center 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    }
+
+    @-webkit-keyframes rotate-vert-center {
+    0% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+        }
+    100% {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+        }
+}
+    @keyframes rotate-vert-center {
+    0% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+        }
+    100% {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+        }
+}
+}

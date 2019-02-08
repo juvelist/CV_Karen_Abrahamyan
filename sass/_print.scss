@@ -1,0 +1,18 @@
+@media print {
+    body {
+        background-color: #fff;
+        padding-top: 0;
+    }
+
+    .wrapper {
+        @include box-shadow(0, 0, 0, 0);
+    }
+
+    .print__block {
+        display: none;
+    }
+
+    .left-block__item-interests {
+        margin-bottom: 200px;
+    }
+}
