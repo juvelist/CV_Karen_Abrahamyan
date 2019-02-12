@@ -468,14 +468,22 @@ body {
         bottom: 0;
         color: $colorWhite;
         font-size: 32px;
-        left: 0;
         margin: auto;
         opacity: 0;
         top: 0;
-        right: 0;
         width: 30px;
         height: 30px;
         @include transition-mixin('opacity', .8s);
+
+        &_play {
+            left: 0;
+            right: 50px;
+        }
+
+        &_link {
+            left: 50px;
+            right: 0;
+        }
     }
 
 }
