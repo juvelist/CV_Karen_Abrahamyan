@@ -328,94 +328,17 @@ body {
             background-color: $colorGray;
             height: 2px;
             width: 100%;
+        }
 
-            &:before {
-                background-color: $colorMain;
-                bottom: 0;
-                content: "";
-                left: 0;
-                position: absolute;
-                top: 0;
-                @include transition-mixin(width, .6s, linear);
-            }
+        &-percent {
+            background-color: $colorMain;
+            height: 100%;
+            left: 0;
+            top: 0;
+            @include transition-mixin(width, .4s, linear);
         }
     }
 
-    &__lang {
-        &_am:before {
-            width: 100%;
-        }
-
-        &_ru:before {
-            width: 95%;
-        }
-
-        &_en:before {
-            width: 70%;
-        }
-    }
-
-    &__soft {
-        &_adobe-ph:before {
-            width: 65%;
-        }
-
-        &_adobe-xd:before {
-            width: 60%;
-        }
-
-        &_adobe-il:before {
-            width: 40%;
-        }
-
-        &_sketch:before {
-            width: 50%;
-        }
-
-        &_zeplin:before {
-            width: 75%;
-        }
-
-        &_coral-dr:before {
-            width: 90%;
-        }
-
-        &_html:before {
-            width: 95%;
-        }
-
-        &_css:before {
-            width: 95%;
-        }
-
-        &_sass:before {
-            width: 85%;
-        }
-
-        &_lass:before {
-            width: 60%;
-        }
-
-        &_bootstrap-3:before {
-            width: 90%;
-        }
-
-        &_bootstrap-4:before {
-            width: 90%;
-        }
-
-        &_javascript:before {
-            width: 60%;
-        }
-
-        &_jquery:before {
-            width: 80%;
-        }
-
-        &_mailchimp:before {
-            width: 90%;
-        }
-    }
 }
 
 .portfolio {
