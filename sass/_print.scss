@@ -15,4 +15,40 @@
     .left-block__item-interests {
         margin-bottom: 200px;
     }
+
+    .portfolio__item {
+        &.portfolio__item {
+            &_form {
+                @include bgi('temp/form-css.jpg');
+            }
+
+            &_email {
+                @include bgi('temp/email-html.png');
+            }
+
+            &_projex {
+                @include bgi('temp/projex-css.png');
+            }
+
+            &_notify {
+                @include bgi('temp/notify-css.png');
+            }
+
+            &_waxom {
+                @include bgi('temp/waxom-sass.png');
+            }
+
+            &_mike {
+                @include bgi('temp/mikeregina-bootstrap3.png');
+            }
+        }
+
+        &:before {
+            opacity: .7;
+        }
+
+        .portfolio__icon {
+            opacity: 1;
+        }
+    }
 }
