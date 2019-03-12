@@ -31,6 +31,10 @@
                 @include bgi('temp/markets-semanticui.png');
             }
 
+            &_escape {
+                @include bgi('temp/escape-bootstrap4.png');
+            }
+
         }
 
         &:before {
