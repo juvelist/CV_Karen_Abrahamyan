@@ -314,10 +314,16 @@ body {
             width: 100%;
         }
 
+        &-text {
+            padding-left: 18px;
+        }
+
         &-icon {
             color: $colorMain;
             font-size: 10px;
+            left: 0;
             margin-right: 3px;
+            top: 5px;
         }
 
         &:not(:nth-last-child(-n+3)){
