@@ -106,6 +106,7 @@
   }
 }
 
-@mixin animation($name: animate, $duration: .4s, $type: ease, $fill: none, $delay : 0s) {
-  @include css3-prefix('animation', $name $duration $type $fill $delay);
+@mixin animation($name: animate, $duration: .4s, $type: ease, $delay : 0s, $count: 1, $direction: normal, $fill: none) {
+  @include css3-prefix('animation', $name $duration $type $delay $count $direction $fill);
 }
+
