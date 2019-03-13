@@ -52,7 +52,7 @@
     .left-block__contact-link:hover .left-block__contact-icon,
     .left-block__icon:hover .right-block__icon-inner,
     .right-block__icon:hover .right-block__icon-inner,
-    .right-block__skills-text:hover .right-block__skills-icon {
+    .right-block__skills-info:hover .right-block__skills-icon {
         @include animation(rotate-vert-center, .7s, linear, 0s, 1, normal, both);
     }
 
