@@ -16,7 +16,13 @@
         margin-bottom: 200px;
     }
 
+    .right-block__article-print {
+        padding-bottom: 100px;
+    }
+
     .portfolio__item {
+        height: 150px;
+
         &.portfolio__item {
             &_form {
                 @include bgi('temp/form-css.jpg');
