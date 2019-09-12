@@ -10,19 +10,9 @@
   @include css3-prefix('user-select', $select);
 }
 
-
 @mixin transition-mixin($style: all, $duration: .4s, $type: ease, $delay : 0s) {
   @include css3-prefix('transition', $style $duration $type $delay);
 }
-
-
-/*
-@include select-none($selcet: all);
-@include transition-mixin($type: ease-in-out);
-
-*/
-
-
 
 @mixin bgi($name) {
   background-image: url('../images/' + $name);
