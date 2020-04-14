@@ -63,6 +63,10 @@ strong.italic {
     &__icon {
         margin-right: 2px;
     }
+
+    &__text {
+        letter-spacing: 0.16rem;
+    }
 }
 
 button.print__btn {
@@ -142,6 +146,7 @@ body {
     &__image {
         background-size: cover;
         border-radius: 50%;
+        display: inline-block;
         height: 180px;
         width: 180px;
         @include box-shadow(0px, 0px, 20px, -2px, rgba(0,0,0,.75));
@@ -220,6 +225,7 @@ body {
 
     &__head {
         padding-bottom: 20px;
+        letter-spacing: 0.16rem;
     }
 
     &__icon {
@@ -252,6 +258,7 @@ body {
     &__head {
         background-color: $colorMain;
         color: $colorWhite;
+        letter-spacing: 0.16rem;
         padding: 0 5px;
         position: relative;
     }
@@ -418,15 +425,15 @@ body {
         top: 0;
         width: 30px;
         height: 30px;
-        @include transition-mixin('opacity', .8s);
+        @include transition-mixin('opacity', .4s);
 
         &_play {
             left: 0;
-            right: 50px;
+            right: 60px;
         }
 
         &_link {
-            left: 50px;
+            left: 60px;
             right: 0;
         }
     }
