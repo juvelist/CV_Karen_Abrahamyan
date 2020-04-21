@@ -158,6 +158,7 @@ body {
     }
 
     &__link {
+        display: inline-block;
         color: $colorMain;
         font-size: 36px;
     }
@@ -173,8 +174,10 @@ body {
         &-icon {
             color: $colorMain;
             font-size: 30px;
-            margin-right: 10px;
+            height: auto;
+            margin-right: 8px;
             vertical-align: top;
+            width: 28px;
 
             &-first {
                 margin-left: 10px;
@@ -189,11 +192,6 @@ body {
 
         &-personal {
             font-size: 24px;
-            margin-right: 15px;
-        }
-
-        &-person {
-            margin-right: 6px;
         }
 
         &-address{
@@ -215,7 +213,7 @@ body {
 
     &__item {
         box-sizing: border-box;
-        margin-bottom: 25px;
+        margin-bottom: 22px;
         padding-bottom: 20px;
 
         &:not(:last-child) {
@@ -224,8 +222,8 @@ body {
     }
 
     &__head {
-        padding-bottom: 20px;
         letter-spacing: 0.16rem;
+        margin-bottom: 16px;
     }
 
     &__icon {
@@ -233,7 +231,7 @@ body {
         font-size: 25px;
 
         &_medal {
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
 
         &:not(:nth-last-child(-n+3)) {
@@ -439,6 +437,29 @@ body {
     }
 }
 
+/*up button*/
+.up-button {
+    background-color: $colorMain;
+    bottom: 80px;
+    display: none;
+    height: 23px;
+    position: fixed;
+    right: calc(50% - 430px);
+    text-align: center;
+    width: 22px;
+
+    &:hover .up-button__icon {
+        @include animation(shake-up, .4s, ease-in-out, both);
+        margin-top: -2px;
+    }
+
+    &__icon {
+        color: $colorWhite;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
 /*keyframes*/
 @include keyframes(fade-in-down) {
     from {
@@ -452,4 +473,17 @@ body {
     }
 }
 
+// shake-up
+@include keyframes(shake-up) {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
 
+    33% {
+        transform: translate3d(0, -2px, 0);
+    }
+
+    66% {
+        transform: translate3d(0, 0, 0);
+    }
+}

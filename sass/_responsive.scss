@@ -24,11 +24,15 @@
         width: 219px;
     }
 
+    .up-button {
+        right: calc(50% - 374px);
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
     .wrapper {
-        width: 100%;
+        width: calc(100% - 30px);
     }
 
     .head {
@@ -38,11 +42,21 @@
             text-align: center;
         }
 
+        &__image {
+            height: 160px;
+            width: 160px;
+        }
+
         &__data {
             display: block;
             padding: 0;
             margin: 0 0 25px;
             text-align: center;
+        }
+
+        &__link {
+            font-size: 24px;
+            margin-bottom: 4px;
         }
     }
 
@@ -62,7 +76,7 @@
             }
 
             &-icon {
-                margin-left: 15px;
+                margin: 0;
             }
 
             &-address {
@@ -127,13 +141,27 @@
     .portfolio {
         display: block;
         margin: 0 auto 15px;
+        max-width: 100%;
+        padding: 0;
         width: 420px;
+    }
+
+    .up-button {
+        right: 19px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .portfolio {
         width: 100%;
+    }
+
+    .main__block {
+        margin-bottom: 10px;
+    }
+
+    .up-button {
+        bottom: 50px;
     }
 }
 

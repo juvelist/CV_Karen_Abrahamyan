@@ -1,8 +1,10 @@
+// print button
 $('.print__btn').click(function (event) {
     window.print();
     event.preventDefault();
 });
 
+// skills percent
 $('.right-block__skills-percent').each(function()
 {
     var val = $(this).data('label');
@@ -10,7 +12,7 @@ $('.right-block__skills-percent').each(function()
 
 });
 
-
+// skills mouseover
 $('.right-block__skills-text').mouseover(function()
 {
     var val = $(this).next('.right-block__skills-indicator').find('.right-block__skills-percent').data('label');
@@ -22,3 +24,16 @@ $('.right-block__skills-text').mouseover(function()
     });
 });
 
+// up button
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 200) {
+        $('#up-button').fadeIn(200);
+    } else {
+        $('#up-button').fadeOut(200);
+    }
+});
+$('#up-button').click(function() {
+    $('body,html').animate({
+        scrollTop : 0
+    }, 500);
+});
