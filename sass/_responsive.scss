@@ -107,25 +107,35 @@
             &_form {
                 @include bgi('temp/form-css.jpg');
             }
-
             &_email {
                 @include bgi('temp/email-html.png');
             }
-
             &_projex {
                 @include bgi('temp/projex-css.png');
             }
-
             &_notify {
                 @include bgi('temp/notify-css.png');
             }
-
             &_waxom {
                 @include bgi('temp/waxom-sass.png');
             }
-
+            &_reparin {
+                @include bgi('temp/reparin-responsive.png');
+            }
+            &_game {
+                @include bgi('temp/gamegleam-landing.png');
+            }
             &_mike {
                 @include bgi('temp/mikeregina-bootstrap3.png');
+            }
+            &_markets {
+                @include bgi('temp/markets-semanticui.png');
+            }
+            &_escape {
+                @include bgi('temp/escape-bootstrap4.png');
+            }
+            &_cont {
+                @include bgi('temp/continually.png');
             }
         }
 

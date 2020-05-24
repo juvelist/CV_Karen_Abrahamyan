@@ -1,3 +1,10 @@
+%message-shared {
+
+}
+
+
+
+
 @media only screen and (min-width: 768px) {
     .portfolio__item:hover {
         @include bgi('temp/temp-img-2.jpg');
@@ -32,6 +39,9 @@
             }
             &_escape {
                 @include bgi('temp/escape-bootstrap4.png');
+            }
+            &_cont {
+                @include bgi('temp/continually.png');
             }
         }
 
