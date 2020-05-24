@@ -32,7 +32,7 @@ $(window).scroll(function() {
         $('#up-button').fadeOut(200);
     }
 });
-$('#up-button').click(function() {
+$('.up-button__link').click(function() {
     $('body,html').animate({
         scrollTop : 0
     }, 500);
