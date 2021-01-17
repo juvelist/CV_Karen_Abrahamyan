@@ -13,7 +13,7 @@
     }
 
     .main__about {
-        padding-bottom: 0;
+        padding-bottom: 520px;
     }
 
     .left-block__item-personal {
@@ -24,8 +24,12 @@
         padding-bottom: 40px;
     }
 
+    .right-block__item {
+        margin-bottom: 10px;
+    }
+
     .portfolio__item {
-        height: 150px;
+        height: 140px;
 
         &.portfolio__item {
             &_form {
@@ -61,8 +65,19 @@
             &_cont {
                 @include bgi('temp/continually.png');
             }
+            &_owl {
+                @include bgi('temp/owl.jpg');
+            }
+            &_seriea {
+                @include bgi('temp/seriea.jpg');
+            }
+            &_pairs {
+                @include bgi('temp/pairs.jpg');
+            }
+            &_vii {
+                @include bgi('temp/vii.jpg');
+            }
         }
-
 
         &:before {
             opacity: .7;

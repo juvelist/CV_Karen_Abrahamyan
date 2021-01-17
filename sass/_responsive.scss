@@ -137,6 +137,18 @@
             &_cont {
                 @include bgi('temp/continually.png');
             }
+            &_owl {
+                @include bgi('temp/owl.jpg');
+            }
+            &_seriea {
+                @include bgi('temp/seriea.jpg');
+            }
+            &_pairs {
+                @include bgi('temp/pairs.jpg');
+            }
+            &_vii {
+                @include bgi('temp/vii.jpg');
+            }
         }
 
         &:before {
