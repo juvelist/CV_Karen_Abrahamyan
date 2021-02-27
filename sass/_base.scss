@@ -207,14 +207,14 @@ button {
 
 /* For 2x devices */
 
-@media only screen and ( -webkit-min-device-pixel-ratio: 2 ),
-only screen and ( -webkit-min-device-pixel-ratio: 1.5 ),
-only screen and ( -moz-min-device-pixel-ratio: 2),
-only screen and ( -o-min-device-pixel-ratio: 3/2),
-only screen and ( -o-min-device-pixel-ratio: 2/1),
-only screen and ( min--moz-device-pixel-ratio: 1.5),
-only screen and ( min-device-pixel-ratio: 1.5),
-only screen and ( min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 2) {
 
   .sprite-a:after,
   .sprite-b:before,
@@ -260,7 +260,7 @@ only screen and ( min-device-pixel-ratio: 2) {
 }
 
 .trans-backgroundColor {
-    @include transition-mixin('background-color');
+  @include transition-mixin('background-color');
 }
 
 .trans-borderColor {
@@ -268,9 +268,9 @@ only screen and ( min-device-pixel-ratio: 2) {
 }
 
 .trans-transform {
-    @include transition-mixin('transform');
+  @include transition-mixin('transform');
 }
 
 .trans-opacity {
-    @include transition-mixin('opacity');
+  @include transition-mixin('opacity');
 }
