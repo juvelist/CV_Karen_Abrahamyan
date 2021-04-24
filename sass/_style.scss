@@ -275,6 +275,34 @@ body {
     }
   }
 
+  &__secondary-head {
+    display: inline-block;
+    &.logo {
+      padding-right: 28px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        height: 16px;
+        width: 24px;
+        right: 0;
+        top: 1px;;
+      }
+    }
+    &.logo-render:before {
+      background: no-repeat left center/contain url("../images/renderforest.svg");
+    }
+    &.logo-teach:before {
+      background: no-repeat left center/contain url("../images/teach-me.svg");
+    }
+    &.logo-owl:before {
+      background: no-repeat left center/contain url("../images/owlfinity.svg");
+    }
+    &.logo-up:before {
+      background: no-repeat left center/contain url("../images/upwork.svg");
+    }
+  }
+
   &__secondary-head,
   &__text {
     margin-bottom: 5px;
